@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>avance_profil</title>
+    <h1>Walid Waoua</h1>
+</head>
+<body>
+    <section>
+        <h2>A propos de moi  </h2>
+        <p>Je suis un jeune développeur web passionné par la programmation et le développement web. J'ai une expérience de 2 ans dans le domaine et je suis à la recherche d'un emploi en tant que développeur web. Je suis très motivé et je suis prêt à relever tous les défis qui se présenteront à moi. </p>
+ <img src="pic.walid.jpg" alt="">
+    </section>
+    <section>
+        <h2>hobbies et objectifs </h2>
+        <ul>
+            <h3>hobbies:</h3>
+           <li> art martial</li>
+        <li>   footbal</li>
+        <li>jeux video</li>
+            <li>musique</li>
+
+        </ul>
+        <ol>
+            <h3>objectifs:</h3>
+            <li>trouver un emploi en tant que développeur web</li>
+            <li>améliorer mes compétences en programmation</li>
+            <li>apprendre de nouvelles technologies</li>
+            <li>travailler sur des projets intéressants</li>
+        </ol>
+        
+    </section>
+    <section>
+        <h2>tableau d'amis</h2>
+        <table border="1">
+            <tr>
+            <th>nom</th>
+            <th>prénom</th>
+            <th>age</th>
+            <th>ville</th>
+            <th>lien profile</th>
+            </tr>
+            <tr>
+            <td>mohammed</td>
+            <td>kabil</td>
+            <td>21</td>
+            <td>Essaouira</td>
+            <td><a href="http://">profil</a></td>
+            </tr>
+            <tr>
+            <td>ayman</td>
+            <td>Elkhaddar</td>
+            <td>20</td>
+            <td>Casablanca</td>
+            <td><a href="http://">profil</a></td>
+            </tr>
+            <tr>
+            <td>Nassrdine</td>
+            <td>hanafi</td>
+            <td>21</td>
+            <td>Tanger</td>
+            <td><a href="http://">profil</a></td>
+            </tr>
+        </table>
+    </section>
+    <section >
+        <h2 id="for">formulaire de contact</h2>
+        <form action="">
+            <label for="">nom :</label>
+            <br>
+            <input type="text" name="nom" id="">
+            <br>
+            <label for="">prénom :</label>
+            <br>
+            <input type="text" name="prénom" id="">
+            <br>
+            <label for="">email :</label>
+            <br>
+            <input type="email" name="email" id="">
+            <br>
+            <label for="">message :</label>
+            <br>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="envoyer">
+        </form>
+    </section>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            let nom = document.querySelector('input[name="nom"]').value;
+            let prenom = document.querySelector('input[name="prénom"]').value;
+            let email = document.querySelector('input[name="email"]').value;
+            let message = document.querySelector('textarea[name="message"]').value;
+            
+            if (nom === '' || prenom === '' || email === '' || message === '') {
+                alert('Veuillez remplir tous les champs.');
+            } else {
+                alert('Formulaire soumis avec succès.');
+                // Optionally, you can submit the form here if needed
+                // this.submit();
+            }
+        });
+    </script>
+
+   
+    
+</body>
+</html>

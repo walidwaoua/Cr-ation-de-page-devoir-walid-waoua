@@ -1,0 +1,75 @@
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    width: 100px; 
+    margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+section {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    
+
+
+}
+input[type="text"], input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+input[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ffffff;
+    cursor: pointer;
+    color: #ffffff;
+}
+textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+form{
+    text-align: center;
+}
+h2 {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+}
+
